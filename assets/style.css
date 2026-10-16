@@ -120,3 +120,16 @@
   .links.show .nav-services.mobile-services-open .mega-menu{display:none!important}
   .navin>.brand,.mobile,.lang-toggle{z-index:150!important}
 }
+
+/* Financing providers — original FDG options, refreshed layout */
+.financing-intro .section-head{align-items:start}
+.finance-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:46px}
+.finance-provider{border:1px solid rgba(15,42,73,.12);border-radius:24px;padding:24px;background:#fff;box-shadow:0 18px 50px rgba(13,47,82,.07);display:flex;flex-direction:column;gap:18px;min-height:330px}
+.finance-logo-wrap{height:170px;border-radius:16px;background:#f7fbfc;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:16px}
+.finance-logo-wrap img{width:100%;height:100%;object-fit:contain;display:block}
+.finance-provider h3{margin:0;font-size:1.15rem}
+.finance-provider .btn{margin-top:auto;align-self:flex-start}
+.finance-note{margin-top:42px;padding:34px;border-radius:24px;background:linear-gradient(135deg,#eaf8fb,#f7fbfc)}
+.finance-note h2{margin-top:0}
+@media(max-width:900px){.finance-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.finance-grid{grid-template-columns:1fr;gap:16px}.finance-provider{min-height:0}.finance-logo-wrap{height:150px}.finance-note{padding:24px}}
